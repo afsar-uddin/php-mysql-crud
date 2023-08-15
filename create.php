@@ -11,6 +11,7 @@
         $user_query = mysqli_query($con, $sql);
         if($user_query) {
             echo "Data inserted successfully";
+            header('Location:read.php');
         } else {
             die(mysqli_error($con));
         }
